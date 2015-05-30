@@ -392,46 +392,51 @@ div.content{
 		-webkit-animation-iteration-count:1
 	}
 	
+	/* Posts */
+	.link{
+		margin:0px 0px 24px 0px;
+		padding-left:3px
+	}
 
-.stickied .thumbnail{
-	display:none
-}
+	
+		/* Stickied Post */
+		.stickied .thumbnail{
+			display:none
+		}
+		
+		.stickied .midcol,.stickied .expando-button.selftext.collapsed{
+			display:none
+		}
 
-.self .thumbnail{
-	background:#ddd url(%%Text-icon%%) no-repeat local center;
-	border-radius:999px;
-	width:55px;
-	height:55px;
-	margin:0px 15px 0px 5px;
-	-webkit-transition:box-shadow 300ms;
-	transition:box-shadow 300ms
-}
-
-.self .thumbnail:hover{
-	box-shadow:0px 0px 7px #fff inset
-}
-
-.thumbnail.default{
-	background:#ddd url(%%question-icon%%) no-repeat local center;
-	border-radius:999px;
-	width:55px;
-	height:55px;
-	margin:0px 15px 0px 5px
-}
-
+		
+	.self .thumbnail{
+		background:#ddd url(%%Text-icon%%) no-repeat local center;
+		border-radius:999px;
+		width:55px;
+		height:55px;
+		margin:0px 15px 0px 5px;
+		-webkit-transition:box-shadow 300ms;
+		transition:box-shadow 300ms
+	}
+	
+	.self .thumbnail:hover{
+		box-shadow:0px 0px 7px #fff inset
+	}
+	
+	.thumbnail.default{
+		background:#ddd url(%%question-icon%%) no-repeat local center;
+		border-radius:999px;
+		width:55px;
+		height:55px;
+		margin:0px 15px 0px 5px
+	}
+	
+/* Comments */
 .comment{
 	margin:20px 10px
 }
 
-.link{
-	margin:0px 0px 24px 0px;
-	padding-left:3px
-}
-
-.stickied .midcol,.stickied .expando-button.selftext.collapsed{
-	display:none
-}
-
+/* Side */
 .side{
 	padding:10px;
 	padding-bottom:30px;
@@ -441,125 +446,136 @@ div.content{
 	z-index:99
 }
 
-#searchexpando{
-	border-radius:0px
-}
+	/* Search */
+	#searchexpando{
+		border-radius:0px
+	}	
+	
+	/* Submit Buttons */
+	
+	.morelink,button{
+		color:#369;
+		border:1px solid #369;
+		font:16px sans-serif;
+		letter-spacing:0px;
+		line-height:32px;
+		height:30px;
+		background:none repeat scroll 0px -278px #f2f5ff;
+		-webkit-transition:border-color,box-shadow 200ms;
+		transition:border-color,box-shadow 200ms
+	}
 
-.fancy-toggle-button .active{
-	border-radius:0px;
-	width:100%
-}
+	/* Subscribe/Unsubscribe */
+	.fancy-toggle-button .active{
+		border-radius:0px;
+		width:100%
+	}
+	
+	.fancy-toggle-button .remove{
+		color:#369;
+		border-color:#369;
+		background:none repeat-x scroll left center #f2f5ff;
+		-webkit-transition:box-shadow 300ms;
+		transition:box-shadow 300ms
+	}
+	
+	.fancy-toggle-button .add{
+		color:#fff;
+		border-color:#369;
+		background:none repeat-x scroll left center #369;
+		-webkit-transition:box-shadow 300ms;
+		transition:box-shadow 300ms
+	}
+	
+	.fancy-toggle-button .remove:hover{
+		box-shadow:0px 0px 2px -1px #789 inset
+	}
+	
+	.fancy-toggle-button .add:hover{
+		box-shadow:0px 0px 2px -1px #e3f0fa inset
+	}
+	
+	.fancy-toggle-button .remove:active{
+		box-shadow:0px 0px 2px 1px #789 inset
+	}
+	
+	.fancy-toggle-button .add:active{
+		box-shadow:0px 0px 2px 1px #e3f0fa inset
+	}
+	
+	/* Sub Name */
+	.redditname a,.titlebox h1 a{
+		text-transform:uppercase;
+		color:#fff;
+		text-shadow:0px 0px 3px #aaa;
+		font-family: sans-serif;
+		font-weight: bold;
+		-webkit-transition:text-shadow 300ms;
+		transition:text-shadow 300ms
+	}
+	
+	.redditname a:hover,.titlebox h1 a:hover{
+		text-shadow:0px 0px 4px #aaa
+	}
+	
+	.titlebox h1 a {
+		font-size: 140%;
+	}
+	.redditname a {
+		font-size: 30px;
+	}
+	
+	/* Subscribers/Users Online */
+	.titlebox h1,.titlebox .fancy-toggle-button,.users-online{
+		margin-left:8px
+	}
 
-.fancy-toggle-button .remove{
-	color:#369;
-	border-color:#369;
-	background:none repeat-x scroll left center #f2f5ff;
-	-webkit-transition:box-shadow 300ms;
-	transition:box-shadow 300ms
-}
 
-.fancy-toggle-button .add{
-	color:#fff;
-	border-color:#369;
-	background:none repeat-x scroll left center #369;
-	-webkit-transition:box-shadow 300ms;
-	transition:box-shadow 300ms
-}
+	/* Flair */
+	.titlebox form.flairtoggle,.titlebox .tagline{
+		display:inline-block
+	}
 
-.fancy-toggle-button .remove:hover{
-	box-shadow:0px 0px 2px -1px #789 inset
-}
-
-.fancy-toggle-button .add:hover{
-	box-shadow:0px 0px 2px -1px #e3f0fa inset
-}
-
-.fancy-toggle-button .remove:active{
-	box-shadow:0px 0px 2px 1px #789 inset
-}
-
-.fancy-toggle-button .add:active{
-	box-shadow:0px 0px 2px 1px #e3f0fa inset
-}
-
-.morelink,button{
-	color:#369;
-	border:1px solid #369;
-	font:16px sans-serif;
-	letter-spacing:0px;
-	line-height:32px;
-	height:30px;
-	background:none repeat scroll 0px -278px #f2f5ff;
-	-webkit-transition:border-color,box-shadow 200ms;
-	transition:border-color,box-shadow 200ms
-}
-
+	/* Sidebar Info */
+	.side .usertext-body h1{
+		font:bold 22px sans-serif;
+		margin:0px 0px 15px 0px
+	}
+	
+	.side .usertext-body h2{
+		font:bold 20px sans-serif
+	}
+	
+	.side .usertext-body h3{
+		font:bold 18px sans-serif
+	}
+	
+	.side .usertext-body h4{
+		font:bold 16px sans-serif
+	}
+	
+	.side .usertext-body h5{
+		font:bold 14px sans-serif
+	}
+	
+	.side .usertext-body p{
+		font:14px sans-serif;
+		margin:0px 0px 0px 5px
+	}
+	
+	.md hr{
+		border:0px none;
+		color:transparent;
+		background:#ccc none repeat scroll 0% 0%;
+		height:1px;
+		padding:0px
+	}
+	
 button{
 	line-height:10px
 }
 
-.side .usertext-body h1{
-	font:bold 22px sans-serif;
-	margin:0px 0px 15px 0px
-}
 
-.side .usertext-body h2{
-	font:bold 20px sans-serif
-}
-
-.side .usertext-body h3{
-	font:bold 18px sans-serif
-}
-
-.side .usertext-body h4{
-	font:bold 16px sans-serif
-}
-
-.side .usertext-body h5{
-	font:bold 14px sans-serif
-}
-
-.side .usertext-body p{
-	font:14px sans-serif;
-	margin:0px 0px 0px 5px
-}
-
-.titlebox form.flairtoggle,.titlebox .tagline{
-	display:inline-block
-}
-
-.redditname a,.titlebox h1 a{
-	text-transform:uppercase;
-	color:#fff;
-	text-shadow:0px 0px 3px #aaa;
-	font-family: sans-serif;
-	font-weight: bold;
-	-webkit-transition:text-shadow 300ms;
-	transition:text-shadow 300ms
-}
-
-.redditname a:hover,.titlebox h1 a:hover{
-	text-shadow:0px 0px 4px #aaa
-}
-
-.titlebox h1 a {
-	font-size: 140%;
-}
-.redditname a {
-	font-size: 30px;
-}
-
-.titlebox h1,.titlebox .fancy-toggle-button,.users-online{
-	margin-left:8px
-}
-
-.md hr{
-	border:0px none;
-	color:transparent;
-	background:#ccc none repeat scroll 0% 0%;
-	height:1px;
-	padding:0px
-}
 
 .titlebox .usertext,.titlebox .bottom,.leavemoderator,.titlebox form.flairtoggle, .titlebox form.leavecontributor-button, .titlebox .tagline{
 	margin:8px 8px 8px 8px;
