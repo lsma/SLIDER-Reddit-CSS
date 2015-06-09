@@ -3,6 +3,11 @@
  *	Version 0.1
  *	/u/lsma
  */
+ 
+/* General Elements */	
+.md{
+	max-width:unset
+}
 
 /* My Subreddits Dropdown */
 .drop-choices a.choice{
@@ -66,6 +71,41 @@
 
 .flairselector .error{
 	margin-bottom:8px
+}
+.infobar{
+	background-color:#fff;
+	border:1px solid #5F99CF;
+	font:italic 15px sans-serif
+}
+
+.rounded{
+	border-radius:0px
+}
+
+.gold-accent{
+	background-color:#fff;
+	border:none;
+	color:#369;
+	box-shadow:0px 0px 2px 0px #555;
+	-webkit-transition:box-shadow 200ms;
+	transition:box-shadow 200ms
+}
+
+.gold-accent:hover{
+	box-shadow:0px 0px 4px 0px #555
+}
+
+.gold-accent.comment-visits-box{
+	color:#369
+}
+
+.content.submit .info-notice{
+	background-color:#fff;
+	border:none;
+	padding:9px;
+	margin-bottom:20px;
+	font-size:larger;
+	border-radius:0px
 }
 
 /* Side Boxes */
@@ -382,6 +422,25 @@ div.content{
 	border-bottom:5px solid #CDE
 }
 
+	/* Tab Menu */
+	.tabmenu.formtab{
+		background:#f2f5ff
+	}
+	
+	.tabmenu.formtab .selected a{
+		color:#369;
+		font:18px sans-serif;
+		background-color:#fff;
+		border:none;
+		padding-top:2px
+	}
+	
+	.tabmenu.formtab a{
+		font:15px sans-serif;
+		border:none;
+		background-color:inherit
+	}
+	
 	/* Fadein */
 	body>.content,.tabmenu,.side,#header-bottom-right{
 		animation-name:fadeslide;
@@ -436,6 +495,12 @@ div.content{
 	margin:20px 10px
 }
 
+.new-comment .usertext-body{
+	background-color:inherit;
+	border:none;
+	border-left:4px solid #ABC
+}
+
 /* Side */
 .side{
 	padding:10px;
@@ -463,6 +528,32 @@ div.content{
 		background:none repeat scroll 0px -278px #f2f5ff;
 		-webkit-transition:border-color,box-shadow 200ms;
 		transition:border-color,box-shadow 200ms
+	}
+
+	/* Info Boxes */
+	.titlebox .usertext,.titlebox .bottom,.leavemoderator,.titlebox form.flairtoggle, .titlebox form.leavecontributor-button, .titlebox .tagline{
+		margin:8px 8px 8px 8px;
+		padding:10px;
+		background-color:#fff;
+		box-shadow:0px 0px 3px #aaa;
+		width:260px;
+		-webkit-transition:box-shadow 200ms;
+		transition:box-shadow 200ms
+	}
+	
+	.titlebox .usertext:hover,.titlebox .bottom:hover,.leavemoderator:hover,.titlebox form.flairtoggle:hover, .titlebox form.leavecontributor-button:hover,.titlebox .tagline:hover{
+		box-shadow:0px 0px 6px #aaa
+	}
+	
+	.titlebox .usertext,.titlebox form.flairtoggle{
+		margin:8px 8px 0px 8px
+	}
+	
+	.titlebox .bottom,.titlebox .tagline{
+		padding:4px 10px;
+		line-height:20px;
+		border:none;
+		margin:0px 8px 8px 8px
 	}
 
 	/* Subscribe/Unsubscribe */
@@ -570,64 +661,40 @@ div.content{
 		height:1px;
 		padding:0px
 	}
+
+/* General UI */
+
+	/* Buttons */
+	button{
+		line-height:10px
+	}
+	.morelink a{
+		color:#369
+	}
 	
-button{
-	line-height:10px
-}
-
-
-
-.titlebox .usertext,.titlebox .bottom,.leavemoderator,.titlebox form.flairtoggle, .titlebox form.leavecontributor-button, .titlebox .tagline{
-	margin:8px 8px 8px 8px;
-	padding:10px;
-	background-color:#fff;
-	box-shadow:0px 0px 3px #aaa;
-	width:260px;
-	-webkit-transition:box-shadow 200ms;
-	transition:box-shadow 200ms
-}
-
-.titlebox .usertext:hover,.titlebox .bottom:hover,.leavemoderator:hover,.titlebox form.flairtoggle:hover,.titlebox .tagline:hover{
-	box-shadow:0px 0px 6px #aaa
-}
-
-.titlebox .usertext,.titlebox form.flairtoggle{
-	margin:8px 8px 0px 8px
-}
-
-.titlebox .bottom,.titlebox .tagline{
-	padding:4px 10px;
-	line-height:20px;
-	border:none;
-	margin:0px 8px 8px 8px
-}
-
-.morelink a{
-	color:#369
-}
-
-sidebox,submit,submit-link,spacer{
-	color:#369
-}
-
-.morelink:hover,button:hover{
-	background:none repeat scroll 0px -278px #f2f5ff;
-	box-shadow:0px 0px 2px 0px #abc inset;
-	border-color:#2f5f8f
-}
-
-.morelink:active,button:active{
-	box-shadow:0px 0px 2px 0px #789 inset
-}
-
-.morelink a:hover{
-	color:#369
-}
-
-.morelink .nub{
-	display:none
-}
-
+	sidebox,submit,submit-link,spacer{
+		color:#369
+	}
+	
+	.morelink:hover,button:hover{
+		background:none repeat scroll 0px -278px #f2f5ff;
+		box-shadow:0px 0px 2px 0px #abc inset;
+		border-color:#2f5f8f
+	}
+	
+	.morelink:active,button:active{
+		box-shadow:0px 0px 2px 0px #789 inset
+	}
+	
+	.morelink a:hover{
+		color:#369
+	}
+	
+	.morelink .nub{
+		display:none
+	}
+	
+/* Text Submition */
 .link .usertext-body .md{
 	background-color:#fff;
 	border:none;
@@ -637,79 +704,7 @@ sidebox,submit,submit-link,spacer{
 	padding:15px 10px
 }
 
-.linkinfo{
-	border-color:#369;
-	background-color:#fff;
-	border-radius:0px;
-	color:#369
-}
-
-.tabmenu.formtab{
-	background:#f2f5ff
-}
-
-.tabmenu.formtab .selected a{
-	color:#369;
-	font:18px sans-serif;
-	background-color:#fff;
-	border:none;
-	padding-top:2px
-}
-
-.tabmenu.formtab a{
-	font:15px sans-serif;
-	border:none;
-	background-color:inherit
-}
-
-.formtabs-content{
-	width:98%;
-	border-top:none;
-	padding-top:10px
-}
-
-.infobar{
-	background-color:#fff;
-	border:1px solid #5F99CF;
-	font:italic 15px sans-serif
-}
-
-.new-comment .usertext-body{
-	background-color:inherit;
-	border:none;
-	border-left:4px solid #ABC
-}
-
-.rounded{
-	border-radius:0px
-}
-
-.gold-accent{
-	background-color:#fff;
-	border:none;
-	color:#369;
-	box-shadow:0px 0px 2px 0px #555;
-	-webkit-transition:box-shadow 200ms;
-	transition:box-shadow 200ms
-}
-
-.gold-accent:hover{
-	box-shadow:0px 0px 4px 0px #555
-}
-
-.gold-accent.comment-visits-box{
-	color:#369
-}
-
-.content.submit .info-notice{
-	background-color:#fff;
-	border:none;
-	padding:9px;
-	margin-bottom:20px;
-	font-size:larger;
-	border-radius:0px
-}
-
+/* Footer */
 .footer-parent{
 	background-color:#fff;
 	padding-top:10px;
@@ -748,69 +743,75 @@ sidebox,submit,submit-link,spacer{
 	width:auto
 }
 
-.linefield .title,.roundfield .title{
-	color:#369;
-	font:bold 20px sans-serif;
-	text-transform:capitalize;
-	margin-bottom:5px;
-	display:block
-}
 
-.linefield .gray,.roundfield .gray{
-	font-size:x-small;
-	margin-left:30px;
-	text-transform:uppercase
-}
-
-.linefield .linefield-content,.roundfield .roundfield-content{
-	margin-left:20px
-}
-
-.linefield,.roundfield{
+/* Form Pages */
+.formtabs-content{
 	width:98%;
-	padding:10px;
-	font-size:22px;
-	background-color:transparent;
-	box-shadow:0px 0px 5px #bbb;
-	margin-bottom:30px;
-	border-radius:0px;
-	-webkit-transition:box-shadow 100ms linear 0s;
-	-moz-transition:box-shadow 100ms linear 0s;
-	-o-transition:box-shadow 100ms linear 0s;
-	transition:box-shadow 100ms linear 0s
+	border-top:none;
+	padding-top:10px
 }
 
-.linefield:hover{
-	box-shadow:0px 0px 8px #bbb
-}
+	/* Feilds */
+	.linefield .title,.roundfield .title{
+		color:#369;
+		font:bold 20px sans-serif;
+		text-transform:capitalize;
+		margin-bottom:5px;
+		display:block
+	}
+	
+	.linefield .gray,.roundfield .gray{
+		font-size:x-small;
+		margin-left:30px;
+		text-transform:uppercase
+	}
+	
+	.linefield .linefield-content,.roundfield .roundfield-content{
+		margin-left:20px
+	}
+	
+	.linefield,.roundfield{
+		width:98%;
+		padding:10px;
+		font-size:22px;
+		background-color:transparent;
+		box-shadow:0px 0px 5px #bbb;
+		margin-bottom:30px;
+		border-radius:0px;
+		-webkit-transition:box-shadow 100ms linear 0s;
+		-moz-transition:box-shadow 100ms linear 0s;
+		-o-transition:box-shadow 100ms linear 0s;
+		transition:box-shadow 100ms linear 0s
+	}
+	
+	.linefield:hover{
+		box-shadow:0px 0px 8px #bbb
+	}
+	
+	.linefield textarea,.linefield input[type="text"],.linefield input[type="password"]{
+		width:100%
+	}
+	
+	.usertext-edit,.roundfield textarea,.roundfield input[type="text"],.roundfield input[type="url"],.roundfield input[type="password"],.roundfield input[type="number"]{
+		width:99%
+	}
+	
+	.usertext-edit textarea{
+		height:120px
+	}
 
-.linefield textarea,.linefield input[type="text"],.linefield input[type="password"]{
-	width:100%
-}
+	.roundfield textarea,.roundfield input[type="text"],.roundfield input[type="url"],.roundfield input[type="password"],.roundfield input[type="number"],.pretty-form input[type="text"],.pretty-form textarea,.pretty-form input[type="password"],.pretty-form input[type="number"]{
+		border:1px solid #fff;
+		width:98%;
+		padding:6px;
+		box-shadow:0px 0px 3px rgba(0,0,0,0.3) inset,0px 1px 0px rgba(255,255,255,0.6)
+	}
+	
+	.roundfield .usertext-edit{
+		width:100%
+	}
 
-.usertext-edit,.roundfield textarea,.roundfield input[type="text"],.roundfield input[type="url"],.roundfield input[type="password"],.roundfield input[type="number"]{
-	width:99%
-}
-
-.usertext-edit textarea{
-	height:120px
-}
-
-.roundfield textarea,.roundfield input[type="text"],.roundfield input[type="url"],.roundfield input[type="password"],.roundfield input[type="number"],.pretty-form input[type="text"],.pretty-form textarea,.pretty-form input[type="password"],.pretty-form input[type="number"]{
-	border:1px solid #fff;
-	width:98%;
-	padding:6px;
-	box-shadow:0px 0px 3px rgba(0,0,0,0.3) inset,0px 1px 0px rgba(255,255,255,0.6)
-}
-
-.roundfield .usertext-edit{
-	width:100%
-}
-
-.md{
-	max-width:unset
-}
-
+/* Wiki */
 .wiki-page .wikititle,.wiki-page-content .md h1,.wiki-page-content .md h2,.wiki-page-content .md h3,.wiki-page-content .md h4,.wiki-page-content .md h5,.wiki-page-content .md h6{
 	color:#000;
 	background:none repeat scroll 0% 0% transparent;
@@ -891,6 +892,7 @@ sidebox,submit,submit-link,spacer{
 	border-left:none
 }
 
+/* Animations */
 @-webkit-keyframes fadeslide{
 	0%{
 		opacity:0;
@@ -1195,4 +1197,11 @@ sidebox,submit,submit-link,spacer{
 
 .sheets{
 	margin-right:5px
+}
+
+.linkinfo{
+	border-color:#369;
+	background-color:#fff;
+	border-radius:0px;
+	color:#369
 }
